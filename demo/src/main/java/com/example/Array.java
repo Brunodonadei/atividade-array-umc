@@ -1,11 +1,11 @@
 package com.example;
 
-public class Aulas {
+public class Array {
     private String[] nomes;
     private int tamanhoMaximo;
     private int quantidadeAtual;
 
-    public Aulas(int tamanhoMaximo) {
+    public Array(int tamanhoMaximo) {
         this.tamanhoMaximo = tamanhoMaximo;
         this.nomes = new String[tamanhoMaximo];
         this.quantidadeAtual = 0;

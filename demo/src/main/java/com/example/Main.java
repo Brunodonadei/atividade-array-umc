@@ -1,19 +1,21 @@
 package com.example;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
     
-        Aulas aula = new Aulas(5);
-        aula.adicionar("Bigodelol 1");
-        aula.adicionar("Fabio 2");
-        aula.adicionar("Bruno 3");
-        aula.listarNomes();
-        aula.listarTamanho();
+       Fila fila = new Fila(5);
 
-        System.out.println("Depois da remoção: ");
-        aula.remover("Bigodelol 1");
-        aula.listarNomes();
-        aula.listarTamanho();
+       fila.adicionar("Fabio 1");
+       fila.adicionar("Fabio 2");
+       fila.listarNomes();
+       fila.listarTamanho();
 
-        aula.listarNome("Bigodelol 1");
+       fila.remover();
+       System.out.println("Depois de remover: ");
+       fila.listarTamanho();
+       fila.listarNomes();
+
+
     }};
