@@ -31,11 +31,11 @@ public class Pilha {
     }
 
     public void remover() {
-        for (int i = 0; i < tamanhoArray; i++){
-            if (nomes.length > 0) {
-                nomes[tamanhoArray-1] = null;
-            }
-        }
-        tamanhoArray--;
+    if (tamanhoArray == 0) {
+        System.out.println("A pilha está vazia, nada para remover.");
+        return;
     }
+    nomes[tamanhoArray - 1] = null;
+    tamanhoArray--;
+}
 }
