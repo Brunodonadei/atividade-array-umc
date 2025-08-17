@@ -19,8 +19,7 @@ public class Main {
             System.out.print("Escolha uma opção: ");
 
             int opcao = sc.nextInt();
-            sc.nextLine(); // consumir quebra de linha
-
+            sc.nextLine(); 
             if (opcao == 0) {
                 System.out.println("Saindo... Até mais!");
                 break;
